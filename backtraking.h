@@ -4,6 +4,8 @@
 #include <vector>
 #include <climits>
 #include "listback.h"
+#include <QString>
+
 
 const int N = 10;
 
@@ -23,6 +25,7 @@ public:
 
     nodeBack *a;
     listBack findShortestPath(int start_x, int start_y, int end_x, int end_y);
+
 
 
 

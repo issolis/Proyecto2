@@ -1,7 +1,7 @@
 #ifndef LISTBACK_H
 #define LISTBACK_H
 #include "nodeback.h"
-
+#include <QString>
 
 class listBack
 {
@@ -17,6 +17,7 @@ public:
     bool hasDuplicates() ;
     void addId(int id);
     void printId();
+    void addL(listBack path);
 
 
 

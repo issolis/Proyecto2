@@ -1,6 +1,8 @@
 #include "backtraking.h"
 #include <iostream>
 #include <cstring>
+#include <QDebug>
+
 
 using namespace std;
 
@@ -152,6 +154,7 @@ void backTraking::backtrack(int x, int y, int distance, int end_x, int end_y, li
 
             if(path.hasDuplicates()==false){
                 shortestPath.addToGlobalList(path,id_list);
+                shortestPath.printPath(shortestPath);
 
 
 
@@ -180,10 +183,15 @@ listBack backTraking::findShortestPath(int start_x, int start_y, int end_x, int 
     backtrack(start_x, start_y, 0, end_x, end_y, path);
 
 
-
-    return shortestPath;
+    id_list.addL(shortestPath);
+    id_list.printId();
+    return id_list;
 
 
 
 
 }
+
+
+
+

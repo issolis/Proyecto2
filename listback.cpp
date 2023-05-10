@@ -1,6 +1,7 @@
 #include "listback.h"
 #include <iostream>
-
+#include <QString>
+#include <QDebug>
 listBack::listBack()
 {
     this->head = nullptr;
@@ -84,10 +85,6 @@ void listBack::addToGlobalList(listBack path, listBack id_list){
     }
 
 
-    while (curr != nullptr) {
-        add(curr->x, curr->y);
-        curr = curr->next;
-    }
 
 
 }
@@ -126,4 +123,16 @@ void listBack::printId(){
         curr = curr->next;
     }
     std::cout << std::endl;
+}
+
+void listBack::addL(listBack path){
+    nodeBack* curr = path.head;
+    while (curr != nullptr) {
+
+        int id= 22*curr->x+curr->y+1;
+        addId(id);
+
+        curr = curr->next;
+    }
+
 }
