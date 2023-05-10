@@ -13,7 +13,10 @@ public:
     bool esvacia();
     void printPath(listBack path);
     int length();
-    void addToGlobalList(listBack path);
+    void addToGlobalList(listBack path, listBack id_list);
+    bool hasDuplicates() ;
+    void addId(int id);
+    void printId();
 
 
 
