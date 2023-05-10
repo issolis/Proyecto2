@@ -9,6 +9,9 @@ public:
     int x;
     int y;
     nodeBack* next;
+    int id;
+    nodeBack(int id);
+
 };
 
 #endif // NODEBACK_H

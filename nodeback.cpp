@@ -7,3 +7,7 @@ nodeBack::nodeBack(int x, int y)
     next = nullptr;
 
 }
+nodeBack::nodeBack(int id){
+    this->id=id;
+    next=nullptr;
+}
